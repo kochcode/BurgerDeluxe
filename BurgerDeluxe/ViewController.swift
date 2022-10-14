@@ -15,15 +15,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         //let components = burgerTitle.text!.components(separatedBy: " ")
-        let bT = "\(burgerTitle.text!)"
-        var save = ""
-        var secSave = ""
-        for (index, char) in bT.enumerated(){
-            if index == 55{
-                save = "\(char)"
-            }
+    }
+    class Burger{
+        var cheese = 0
+        var pickles = 0
+        var ketchup = 0.0
+        var buns = true
+        enum cookrate {
+            case welldone
+            case mediumwell
+            case medium
+            case mediumrare
+            case rare
         }
     }
 }
+
 
 

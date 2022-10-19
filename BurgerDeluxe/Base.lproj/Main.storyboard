@@ -17,25 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cHS-a2-utr">
-                                <rect key="frame" x="0.0" y="107" width="390" height="268"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cHS-a2-utr">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brian B. Burger's Big Burger Bistro Bonanza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="noa-0d-gYg">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="28.666666666666668"/>
-                                        <color key="backgroundColor" red="0.75970521907216493" green="0.48708373740839639" blue="0.17329097244013972" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="62.333333333333336"/>
+                                        <color key="backgroundColor" red="0.7597052191" green="0.54802951659999999" blue="0.18612782750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose How the Patty is Cooked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEE-4j-kQL">
-                                        <rect key="frame" x="0.0" y="58.66666666666665" width="390" height="28.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="82.333333333333343" width="390" height="62.666666666666657"/>
                                         <color key="backgroundColor" red="0.82260578187212796" green="0.73183954851474908" blue="0.84258943796157837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2EP-bO-81T">
-                                        <rect key="frame" x="0.0" y="117.33333333333334" width="390" height="32"/>
+                                        <rect key="frame" x="0.0" y="165" width="390" height="68.666666666666686"/>
                                         <color key="backgroundColor" red="0.0" green="0.73652947809278357" blue="0.050267866263748837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <segments>
                                             <segment title="Well Done"/>
@@ -45,16 +45,20 @@
                                             <segment title="Rare"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="cookedChoice:" destination="BYZ-38-t0r" eventType="valueChanged" id="6EG-y3-ar0"/>
+                                            <action selector="cookedChoice:" destination="8bC-Xf-vdC" eventType="valueChanged" id="jR3-dh-U4G"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjA-Q8-0Zv">
-                                        <rect key="frame" x="0.0" y="178.33333333333331" width="390" height="28.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="252.66666666666671" width="390" height="62.333333333333343"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Ccu-l6-1f2">
-                                        <rect key="frame" x="0.0" y="237" width="390" height="32"/>
+                                        <rect key="frame" x="0.0" y="335" width="390" height="68.666666666666686"/>
                                         <color key="backgroundColor" red="0.58644088270000005" green="0.2108516677" blue="0.087595820759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <segments>
                                             <segment title="Plain"/>
@@ -62,24 +66,29 @@
                                             <segment title="Burger Burger"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
+                                        <connections>
+                                            <action selector="burgerChoice:" destination="BYZ-38-t0r" eventType="valueChanged" id="GaJ-8Z-Ukz"/>
+                                            <action selector="burgerChoice:" destination="8bC-Xf-vdC" eventType="valueChanged" id="uc9-gc-jdC"/>
+                                            <action selector="burgerSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="VbQ-U0-Pw8"/>
+                                        </connections>
                                     </segmentedControl>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7T-Eu-hFf">
-                                <rect key="frame" x="-39" y="491.00000000000006" width="186.66666666666666" height="54.666666666666664"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI5-FL-szH">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="54.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-72-WaI">
-                                        <rect key="frame" x="50" y="0.0" width="136.66666666666666" height="54.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="422.66666666666669" width="390" height="104.00000000000006"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Purchase">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="labelColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="purchase:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="aHy-lI-xqi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-IZ-MzV">
+                                        <rect key="frame" x="0.0" y="546.66666666666663" width="390" height="216.33333333333337"/>
+                                        <color key="tintColor" red="0.75970521907216493" green="0.54802951657156151" blue="0.18612782751236487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Go to Cart">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
@@ -89,13 +98,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="cHS-a2-utr" secondAttribute="trailing" id="eVv-lY-QKp"/>
-                            <constraint firstItem="cHS-a2-utr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="gpL-kS-r5w"/>
-                            <constraint firstItem="cHS-a2-utr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hOV-yr-w0s"/>
+                            <constraint firstItem="cHS-a2-utr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CV4-CO-Bge"/>
+                            <constraint firstItem="cHS-a2-utr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rgI-MZ-0bx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHS-a2-utr" secondAttribute="bottom" id="sxO-K4-tRg"/>
+                            <constraint firstAttribute="trailing" secondItem="cHS-a2-utr" secondAttribute="trailing" id="xNh-QO-Vs4"/>
                         </constraints>
+                        <connections>
+                            <outlet property="burgerChoice" destination="Ccu-l6-1f2" id="jPb-Es-KIr"/>
+                            <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="Kq7-J2-SUT"/>
+                            <outlet property="cookedSegment" destination="2EP-bO-81T" id="hVu-E1-BNE"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="burgerChoice" destination="Ccu-l6-1f2" id="g0j-1R-T3D"/>
+                        <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="nJx-Jn-bMG"/>
                         <outlet property="burgerTitle" destination="noa-0d-gYg" id="fiO-go-2t2"/>
+                        <outlet property="cookedChoice" destination="2EP-bO-81T" id="cMp-cV-WmX"/>
+                        <outlet property="cookedSegment" destination="2EP-bO-81T" id="Ijm-Sb-cnG"/>
                         <segue destination="sFg-56-sGl" kind="show" id="IT4-Xx-sJQ"/>
                     </connections>
                 </viewController>

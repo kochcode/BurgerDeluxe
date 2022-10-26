@@ -45,10 +45,6 @@
                                             <segment title="Rare"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
-                                        <connections>
-                                            <action selector="cookedChoice:" destination="BYZ-38-t0r" eventType="valueChanged" id="6EG-y3-ar0"/>
-                                            <action selector="cookedChoice:" destination="8bC-Xf-vdC" eventType="valueChanged" id="jR3-dh-U4G"/>
-                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjA-Q8-0Zv">
                                         <rect key="frame" x="0.0" y="252.66666666666671" width="390" height="62.333333333333343"/>
@@ -66,11 +62,6 @@
                                             <segment title="Burger Burger"/>
                                         </segments>
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
-                                        <connections>
-                                            <action selector="burgerChoice:" destination="BYZ-38-t0r" eventType="valueChanged" id="GaJ-8Z-Ukz"/>
-                                            <action selector="burgerChoice:" destination="8bC-Xf-vdC" eventType="valueChanged" id="uc9-gc-jdC"/>
-                                            <action selector="burgerSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="VbQ-U0-Pw8"/>
-                                        </connections>
                                     </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-72-WaI">
                                         <rect key="frame" x="0.0" y="422.66666666666669" width="390" height="104.00000000000006"/>
@@ -81,7 +72,7 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="purchase:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="aHy-lI-xqi"/>
+                                            <action selector="purchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Q5-Di-rID"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-IZ-MzV">
@@ -103,18 +94,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cHS-a2-utr" secondAttribute="bottom" id="sxO-K4-tRg"/>
                             <constraint firstAttribute="trailing" secondItem="cHS-a2-utr" secondAttribute="trailing" id="xNh-QO-Vs4"/>
                         </constraints>
-                        <connections>
-                            <outlet property="burgerChoice" destination="Ccu-l6-1f2" id="jPb-Es-KIr"/>
-                            <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="Kq7-J2-SUT"/>
-                            <outlet property="cookedSegment" destination="2EP-bO-81T" id="hVu-E1-BNE"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="burgerChoice" destination="Ccu-l6-1f2" id="g0j-1R-T3D"/>
-                        <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="nJx-Jn-bMG"/>
-                        <outlet property="burgerTitle" destination="noa-0d-gYg" id="fiO-go-2t2"/>
-                        <outlet property="cookedChoice" destination="2EP-bO-81T" id="cMp-cV-WmX"/>
-                        <outlet property="cookedSegment" destination="2EP-bO-81T" id="Ijm-Sb-cnG"/>
+                        <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="3yU-Oh-rkB"/>
+                        <outlet property="cookedSegment" destination="2EP-bO-81T" id="b12-eV-1VO"/>
                         <segue destination="sFg-56-sGl" kind="show" id="IT4-Xx-sJQ"/>
                     </connections>
                 </viewController>

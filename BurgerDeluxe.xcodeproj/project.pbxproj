@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DAF1768D290960E50010DEA1 /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF1768C290960E50010DEA1 /* Burger.swift */; };
 		DAF9C70128F058C0004062D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9C70028F058C0004062D8 /* AppDelegate.swift */; };
 		DAF9C70328F058C0004062D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9C70228F058C0004062D8 /* SceneDelegate.swift */; };
 		DAF9C70528F058C0004062D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9C70428F058C0004062D8 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DAF1768C290960E50010DEA1 /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
 		DAF9C6FD28F058C0004062D8 /* BurgerDeluxe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerDeluxe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF9C70028F058C0004062D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF9C70228F058C0004062D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				DAF9C70028F058C0004062D8 /* AppDelegate.swift */,
 				DAF9C70228F058C0004062D8 /* SceneDelegate.swift */,
 				DAF9C70428F058C0004062D8 /* ViewController.swift */,
+				DAF1768C290960E50010DEA1 /* Burger.swift */,
 				DAF9C70628F058C0004062D8 /* Main.storyboard */,
 				DAF9C70C28F058C1004062D8 /* Assets.xcassets */,
 				DAF9C70E28F058C1004062D8 /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF9C70528F058C0004062D8 /* ViewController.swift in Sources */,
+				DAF1768D290960E50010DEA1 /* Burger.swift in Sources */,
 				DAF9C70128F058C0004062D8 /* AppDelegate.swift in Sources */,
 				DAF9C70328F058C0004062D8 /* SceneDelegate.swift in Sources */,
 				DAF9C70B28F058C0004062D8 /* BurgerDeluxe.xcdatamodeld in Sources */,

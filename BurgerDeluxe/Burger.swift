@@ -42,7 +42,9 @@ class Burger{
         self.ketchup = ketchup
         self.buns = buns
     }
-    
+    var order : String {
+        return "buns: \(buns), ketchup: \(ketchup), pickles: \(pickles), cheese: \(cheese), cooked: \(String(describing: cook))"
+    }
     
     
 }

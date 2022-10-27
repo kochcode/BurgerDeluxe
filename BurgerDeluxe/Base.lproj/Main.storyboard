@@ -21,21 +21,21 @@
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brian B. Burger's Big Burger Bistro Bonanza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="noa-0d-gYg">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="62.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="48.666666666666664"/>
                                         <color key="backgroundColor" red="0.7597052191" green="0.54802951659999999" blue="0.18612782750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose How the Patty is Cooked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEE-4j-kQL">
-                                        <rect key="frame" x="0.0" y="82.333333333333343" width="390" height="62.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="68.666666666666671" width="390" height="48.666666666666671"/>
                                         <color key="backgroundColor" red="0.82260578187212796" green="0.73183954851474908" blue="0.84258943796157837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2EP-bO-81T">
-                                        <rect key="frame" x="0.0" y="165" width="390" height="68.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="137.33333333333334" width="390" height="53.666666666666657"/>
                                         <color key="backgroundColor" red="0.0" green="0.73652947809278357" blue="0.050267866263748837" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <segments>
                                             <segment title="Well Done"/>
@@ -47,15 +47,15 @@
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Burger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjA-Q8-0Zv">
-                                        <rect key="frame" x="0.0" y="252.66666666666671" width="390" height="62.333333333333343"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <rect key="frame" x="0.0" y="210" width="390" height="48.666666666666686"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Ccu-l6-1f2">
-                                        <rect key="frame" x="0.0" y="335" width="390" height="68.666666666666686"/>
-                                        <color key="backgroundColor" red="0.58644088270000005" green="0.2108516677" blue="0.087595820759999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <rect key="frame" x="0.0" y="278.66666666666669" width="390" height="53.333333333333314"/>
+                                        <color key="backgroundColor" red="0.58442735177216498" green="0.20399443068570647" blue="0.08102329875730982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <segments>
                                             <segment title="Plain"/>
                                             <segment title="Cheese with Everything"/>
@@ -63,9 +63,26 @@
                                         </segments>
                                         <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
                                     </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Extra Cheese" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKy-BD-JcK">
+                                        <rect key="frame" x="0.0" y="351" width="390" height="48.666666666666686"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="h4j-ez-an7">
+                                        <rect key="frame" x="0.0" y="419.66666666666669" width="390" height="53.666666666666686"/>
+                                        <color key="backgroundColor" red="0.58442735180000005" green="0.20399443070000001" blue="0.081023298760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <segments>
+                                            <segment title="One slice"/>
+                                            <segment title="Two slices"/>
+                                            <segment title="50 Slices"/>
+                                        </segments>
+                                        <color key="selectedSegmentTintColor" systemColor="systemRedColor"/>
+                                    </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWe-72-WaI">
-                                        <rect key="frame" x="0.0" y="422.66666666666669" width="390" height="104.00000000000006"/>
-                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <rect key="frame" x="0.0" y="492.33333333333337" width="390" height="81"/>
+                                        <color key="tintColor" red="0.7597052191" green="0.48708373739999999" blue="0.17329097239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Purchase">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
@@ -75,9 +92,9 @@
                                             <action selector="purchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Q5-Di-rID"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYy-IZ-MzV">
-                                        <rect key="frame" x="0.0" y="546.66666666666663" width="390" height="216.33333333333337"/>
-                                        <color key="tintColor" red="0.75970521907216493" green="0.54802951657156151" blue="0.18612782751236487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaB-yW-ZFe">
+                                        <rect key="frame" x="0.0" y="593.33333333333337" width="390" height="169.66666666666663"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to Cart">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -98,6 +115,7 @@
                     <connections>
                         <outlet property="burgerSegment" destination="Ccu-l6-1f2" id="3yU-Oh-rkB"/>
                         <outlet property="cookedSegment" destination="2EP-bO-81T" id="b12-eV-1VO"/>
+                        <outlet property="extraSegment" destination="h4j-ez-an7" id="pda-AP-ViL"/>
                         <segue destination="sFg-56-sGl" kind="show" id="IT4-Xx-sJQ"/>
                     </connections>
                 </viewController>
@@ -128,6 +146,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

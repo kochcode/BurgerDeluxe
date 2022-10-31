@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         //let components = burgerTitle.text!.components(separatedBy: " ")
     }
     
+    @IBAction func alert(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Burger!", message: "Burger added to cart", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .destructive, handler: nil)
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
+    }
     @IBAction func purchase(_ sender: UIButton) {
         var type = burgerSegment.selectedSegmentIndex
         var cookrate = cookedSegment.selectedSegmentIndex
@@ -52,6 +58,16 @@ class ViewController: UIViewController {
             print("Burger \(i): \($0.order)")
             i += 1
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "orderSegue"{
+             let burgers = segue.destination as! ViewControllerOrder
+            burgers.orderList = burgerList
+        }
+    }
+    
+    @IBAction func cartButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "orderSegue", sender: self)
     }
 }
 
